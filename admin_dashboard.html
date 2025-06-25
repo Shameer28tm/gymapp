@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container" style="flex-direction: column; max-width: 600px; padding: 20px;">
+    <h1>Welcome Admin</h1>
+    <ul style="list-style: none; padding: 0;">
+      <li><button onclick="alert('Add New Member')">New Member</button></li>
+      <li><button onclick="alert('Add New Staff')">New Staff</button></li>
+      <li><button onclick="alert('Search Member')">Search Member</button></li>
+      <li><button onclick="alert('Delete Member')">Delete Member</button></li>
+      <li><button onclick="logout()">Log Out</button></li>
+    </ul>
+  </div>
+
+  <script>
+    function logout() {
+      window.location.href = 'index.html';
+    }
+  </script>
+</body>
+</html>
